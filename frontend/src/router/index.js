@@ -1,9 +1,11 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Accueil from '../views/Accueil.vue'
+import ModeClassique from '../views/ModeClassique.vue'
 
 const routes = [
   { path: '/', name: 'Accueil', component: Accueil },
-  // On ajoutera d'autres routes plus tard
+  { path: '/classique', name: 'ModeClassique', component: ModeClassique },
+  
 ]
 
 const router = createRouter({

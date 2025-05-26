@@ -4,7 +4,7 @@
       <p>Choisissez un mode de jeu :</p>
   
       <ul>
-        <li><a href="#">🎯 Mode Classique</a></li>
+        <router-link to="/classique">🎯 Mode Classique</router-link>
         <li><a href="#">🏆 Mode Palmarès</a></li>
         <li><a href="#">🔍 Mode Club</a></li>
         <li><a href="#">🖼️ Photo Mode</a></li>

@@ -35,6 +35,17 @@ app.get("/joueurs", async (req, res) => {
   }
 });
 
+// 💡 Route GET pour récupérer tous les joueurs
+app.get('/joueurs', async (req, res) => {
+  try {
+    const result = await pool.query('SELECT * FROM joueurs');
+    res.json(result.rows);
+  } catch (err) {
+    console.error(err.message);
+    res.status(500).send('Erreur serveur');
+  }
+});
+
 // Lancer le serveur
 app.listen(PORT, () => {
   console.log(`Serveur lancé sur http://localhost:${PORT}`);
